@@ -1,4 +1,4 @@
-s = raw_input("Enter a string ")
-l = len(s)
-for i in range(10, 0, -1):
-	print i
+print (3 + 2j) * (3 - 2j)
+s = "Alind"
+print repr(s)
+print str(s)
