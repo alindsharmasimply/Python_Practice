@@ -15,5 +15,5 @@ def main():
 	 	counts[t] = counts[t] + 1
 
 	for i in sorted(counts.keys()):
-	 	print "%5d %11.2f %8.2f" % (i, counts[i] / 1000 * 100, expected[i] * 100)
+	 	print "%5d %11.2f %8.2f" % (i, counts[i] / 10, expected[i] * 100)
 main()
