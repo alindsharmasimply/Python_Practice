@@ -1,2 +1,9 @@
-d = {'key1' : 10, 'key2' : 20, 'key3' : 30, 'key4' : 40}
-print d['key1']
+
+def jj():
+	global i 
+	i = 0
+	for j in range(10):
+		print i
+		i += 1
+jj()
+print i + 10
