@@ -35,10 +35,9 @@ def file_to_set(file_name):
 	with open(file_name, 'rt') as fp:
 		for line in fp:
 			result.add(line.replace('\n',''))
-	retuen result
+	return result
 
-def set_to_file(file_name, links):
+def set_to_file(links, file_name):
 	with open(file_name, 'w') as fp:
 		for l in sorted(links):
 			fp.write(l + '\n')
-	
