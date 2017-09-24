@@ -67,3 +67,29 @@ def write_letters():
 
 write_letters()
 # Imp 6
+
+
+def homologous_sum():
+    a = [1, 2, 3]
+    b = (3, 6, 9)
+    for i, j in zip(a, b):
+        print i + j
+
+
+homologous_sum()
+# Imp 7
+
+
+def two_by_two():
+    with open("two_by_two.txt", "w") as fp:
+        for x, y, z in zip(string.ascii_lowercase[::3], string.ascii_lowercase[1::3], string.ascii_lowercase[2::3]):
+            fp.write(x + y + z + '\n')
+        fp.close()
+
+    with open("two_by_two.txt", "r") as fp:
+        print fp.read()
+        fp.close()
+
+
+two_by_two()
+# Imp 8
