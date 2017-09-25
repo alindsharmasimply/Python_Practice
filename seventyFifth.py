@@ -69,3 +69,16 @@ def translator():
 
 
 # Imp 7
+
+def advanced_translator():
+    a = raw_input("Enter your word ")
+    a = a.lower()
+    d = dict(weather="clima", earth="terra", rain="chuva")
+    try:
+        print d[a]
+    except Exception as e:
+        print "Your word can't be found"
+
+
+advanced_translator()
+# Imp 8
