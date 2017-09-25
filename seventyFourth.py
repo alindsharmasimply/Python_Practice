@@ -7,7 +7,7 @@ def password():
         s = fp.read()
         L = s.split()
         fp.close()
-    print random.choice(L)
+    print random.choice(L) + random.choice(L)
 
 
 password()
