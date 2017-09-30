@@ -5,13 +5,13 @@ root = Tk()
 L = []
 def file_submission_ADD():
     global L
-    L.append(display.get())
+    L.append(display.get() + '\n')
     display.delete(0, END)
 
 def file_submission_SAVE():
 	global L
 	with open("text_submission_GUI.txt", "a+") as fp:
-		L.append(display.get())
+		L.append(display.get() + '\n')
 		for i in L:
 			fp.write(i)
 		fp.close()
@@ -21,7 +21,7 @@ def file_submission_SAVE():
 def file_submission_SAVE_and_CLOSE():
 	global L
 	with open("text_submission_GUI.txt", "a+") as fp:
-		L.append(display.get())
+		L.append(display.get() + '\n')
 		for i in L:
 			fp.write(i)
 		fp.close() 
